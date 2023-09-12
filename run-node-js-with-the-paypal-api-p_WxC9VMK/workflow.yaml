@@ -1,0 +1,12 @@
+schema: workflow/2022.04
+name: Run Node.js with the PayPal API
+settings:
+  error_notification: true
+steps:
+- namespace: code
+  runtime: nodejs18.x
+  uses: "./code/entry.js"
+  props:
+    paypal:
+      authProvisionId: apn_P8hXrpk
+
